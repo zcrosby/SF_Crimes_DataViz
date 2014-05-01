@@ -16,7 +16,7 @@ import json
 
 
 # Put the full path to your CSV/Excel file here
-MY_FILE = "../data/sample_sfpd_incident_all.csv"
+MY_FILE = "data/sample_sfpd_incident_all.csv"
 
 
 def parse(raw_file, delimiter):
@@ -55,7 +55,6 @@ def main():
     # Call our parse function and give it the needed parameters
     new_data = parse(MY_FILE, ",")
 
-    # Let's see what the data looks like!
     print json.dumps(new_data)
 
 
