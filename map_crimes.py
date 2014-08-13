@@ -47,7 +47,6 @@ def create_map(data_file):
 		f.write(g.dumps(geo_map)) 
 
 def main():
-
 	d = p.parse(p.MY_FILE, ",")
 	return create_map(d)
 
